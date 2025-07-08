@@ -212,8 +212,9 @@ public class HomController {
 	}
 
 	@GetMapping("/")
-public String root() {
-    return "index"; // or replace "index" with any actual template/view name you have
-}
+	public String root() 
+	{ 
+		return "Home page"; 
+	}
 
 }
