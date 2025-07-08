@@ -1,4 +1,4 @@
-package com.example.AptItSolutions;
+package com.aptits;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,12 +8,13 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @SpringBootApplication
 public class AptitsApplication extends SpringBootServletInitializer {
 
-    public static void main(String[] args) {
-        SpringApplication.run(AptitsApplication.class, args);
+    // This method is required for WAR deployment to external Tomcat
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+        return builder.sources(AptitsApplication.class);
     }
 
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(AptitsApplication.class);
+    public static void main(String[] args) {
+        SpringApplication.run(AptitsApplication.class, args);
     }
 }
