@@ -1,4 +1,4 @@
-package com.aptits;
+package com.example.AptItSolutions;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
