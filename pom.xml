@@ -40,10 +40,11 @@
 
         <!-- MySQL Connector -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
-        </dependency>
+             <groupId>mysql</groupId>
+             <artifactId>mysql-connector-java</artifactId>
+             <version>8.0.33</version> <!-- ✅ Add this line -->
+         </dependency>
+
 
         <!-- Disable embedded Tomcat, as we deploy in external Tomcat -->
         <dependency>
