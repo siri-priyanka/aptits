@@ -4,7 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-
 public class HomController {
 
 	@GetMapping("/index")
@@ -52,7 +51,6 @@ public class HomController {
 		return "gallery";
 	}
 	
-	
 	@GetMapping("/galleryform")
 	public String galleryform() {
 		return "galleryform";
@@ -82,8 +80,6 @@ public class HomController {
 	public String hr() {
 		return "hr";
 	}
-
-	//
 
 	@GetMapping("/wedesign")
 	public String wedesign() {
@@ -115,13 +111,10 @@ public class HomController {
 		return "business";
 	}
 	
-	
 	@GetMapping("/applicationform")
 	public String applicationform() {
 		return "applicationform";
 	}
-
-	//
 
 	@GetMapping("/realapt")
 	public String realapt() {
@@ -158,63 +151,48 @@ public class HomController {
 		return "adminlogin";
 	}
 	
-	
-	
 	@GetMapping("/adminDashboard")
 	public String adminDashboard() {
 		return "admindashboard";
 	}
-	
-	
 	
 	@GetMapping("/addnewnews")
 	public String addnewnews() {
 		return "addnewnews";
 	}
 	
-	
 	@GetMapping("/addnewcareers")
 	public String addnewcareers() {
 		return "addnewcareers";
 	}
 	
-	
 	@GetMapping("/scrollform")
 	public String scrollform() {
 		return "scrollform";
 	}
-	
-	
-	
 
 	@GetMapping("/editscrollform")
 	public String editscrollform() {
 		return "editscrollform";
 	}
-	
 
 	@GetMapping("/editnewsform")
 	public String editnewsform() {
 		return "editnewsform";
 	}
-	
-	
 
 	@GetMapping("/editjobopeningform")
 	public String editjobopeningform() {
 		return "editjobopeningform";
 	}
-	
-	
+
 	@GetMapping("/editimage")
 	public String editimage() {
 		return "editimage";
 	}
 
 	@GetMapping("/")
-	public String root() 
-	{ 
-		return "Home page"; 
+	public String root() {
+		return "index"; // ✅ fix: return a valid view
 	}
-
 }
